@@ -1,0 +1,7 @@
+{
+  "name": "newappapi",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

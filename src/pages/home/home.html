@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+
+        <ion-card class="card-background-page">
+
+        
+            <img src="{{image}}"/>
+          
+            <div class="card-subtitle">   {{title}}</div>
+          </ion-card>
+
+
+    
+  
+      <ion-list *ngFor="let i of arry; let a =index">
+    <ion-item (click)="item(a)">
+      <ion-thumbnail item-start>
+      <img src="{{i.urlToImage}}">
+      </ion-thumbnail>
+        
+      <h6>{{i.title}}</h6>
+      <h6>{{i.description}}</h6>
+      
+    
+     
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

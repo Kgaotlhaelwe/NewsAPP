@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div cards>
+
+    <div class="grid-full">
+      <ion-row>
+        <ion-col  id="health">
+          <ion-card (click) =  "more('Health')"  id="health">
+            <h1> <ion-icon ios="ios-medkit" md="md-medkit"></ion-icon></h1>
+            <p>Health</p>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click) =  "more('Business')">
+            <h1><ion-icon name="book"></ion-icon></h1>
+            <p>Business</p>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click) =  "more('Technology')">
+            <h1 ><ion-icon ios="ios-laptop" md="md-laptop"></ion-icon></h1>
+            <p>Technology</p>
+          </ion-card>
+        </ion-col>
+        
+        <ion-col>
+            <ion-card (click) =  "more('Sports')">
+              <h1><ion-icon ios="ios-football" md="md-football"></ion-icon></h1>
+              <p>Sports</p>
+            </ion-card>
+          </ion-col>
+          
+
+          <ion-col>
+              <ion-card (click) =  "more('Entertainment')">
+                <h1><ion-icon ios="ios-camera" md="md-camera"></ion-icon></h1>
+                <p>entertainment</p>
+              </ion-card>
+            </ion-col>
+
+            <ion-col>
+                <ion-card (click) =  "more('General')">
+                  <h1> <ion-icon ios="ios-people" md="md-people"></ion-icon></h1>
+                  <p>General</p>
+                </ion-card>
+              </ion-col>
+        </ion-row>
+    </div>
+  </div>
+
+</ion-content>
